@@ -1,5 +1,5 @@
-import data from '../../../public/data.js';
-const Plotly = require('plotly.js');
+const data = require('../../../public/data.js').choro;
+import Plotly from 'plotly.js';
 import React from 'react';
 
 export class Choropleth extends React.Component {
@@ -38,15 +38,12 @@ export class Choropleth extends React.Component {
                 }
             }
         };
-        console.log(this.state.data)
-        Plotly.plot('choropleth', this.state.data, layout, {showlink: false})
+        Plotly.plot('choropleth', this.state.data, layout, {showlink: false, displaylogo:false})
     }
 
     render() {
         return (
-            <div>
-                <div id="choropleth"/>
-            </div>
+            <div id="choropleth"/>
         )
     }
 }

@@ -1,5 +1,5 @@
 import './App.css';
-import {Choropleth} from './Components';
+import {Animated, Choropleth} from './Components';
 import logo from './logo.png';
 import React, {Component} from 'react';
 
@@ -13,6 +13,7 @@ class App extends Component {
                     <h4>It's goin' be ssiiiiiccckkkk</h4>
                 </div>
                 <Choropleth/>
+                <Animated/>
             </div>
         );
     }
