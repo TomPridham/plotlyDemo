@@ -1,7 +1,6 @@
-import './App.css';
-import {Choropleth} from './Components';
-import logo from './logo.png';
 import React, {Component} from 'react';
+import logo from './logo.png';
+import './App.css';
 
 class App extends Component {
     render() {
@@ -12,7 +11,7 @@ class App extends Component {
                     <h2>Welcome to Plotly Demo</h2>
                     <h4>It's goin' be ssiiiiiccckkkk</h4>
                 </div>
-                <Choropleth/>
+
             </div>
         );
     }
