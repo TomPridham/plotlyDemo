@@ -1,4 +1,4 @@
-export default [
+module.exports =  [
     ["Afghanistan",
      5],
     ["Algeria",
